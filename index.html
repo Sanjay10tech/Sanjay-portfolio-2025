@@ -1,0 +1,686 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="description" content="Sanjay Kumar Shukla — Full Stack Developer & DevOps AI Engineer"/>
+  <title>Sanjay Kumar Shukla | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css"/>
+
+  <!-- Embedded Assets (photos + PDF) -->
+  <script src="assets/images.js"></script>
+</head>
+<body>
+
+<!-- ── CURSOR ─────────────────────────────────────────────── -->
+<div id="cursor"></div>
+<div id="cdot"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVBAR
+     ════════════════════════════════════════════════════════ -->
+<nav>
+  <a href="#home" class="logo">
+    <div class="logo-ic">SS</div>
+    <span class="logo-nm">Sanjay Kumar Shukla</span>
+  </a>
+  <div class="nav-links">
+    <a href="#home" class="active">Home</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="hamburger" onclick="toggleNav()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mob-nav" id="mobnav">
+  <a href="#home"           onclick="closeNav()">Home</a>
+  <a href="#about"          onclick="closeNav()">About</a>
+  <a href="#experience"     onclick="closeNav()">Experience</a>
+  <a href="#education"      onclick="closeNav()">Education</a>
+  <a href="#skills"         onclick="closeNav()">Skills</a>
+  <a href="#projects"       onclick="closeNav()">Projects</a>
+  <a href="#blog"           onclick="closeNav()">Blog</a>
+  <a href="#contact"        onclick="closeNav()">Contact</a>
+</div>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 1 — HERO
+     ════════════════════════════════════════════════════════ -->
+<section id="home">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Left: Text -->
+      <div class="hero-left fade-up vis">
+        <div class="avail-badge">
+          <span class="avail-dot"></span>
+          Available for opportunities
+        </div>
+        <div class="hero-hey">Hey 🚀</div>
+        <h1 class="hero-name">I'm <span>Sanjay<br>Shukla</span></h1>
+        <div class="hero-role">Software Developer</div>
+        <div class="hero-sub">DevOps &amp; AI Engineer · Full Stack Web Developer</div>
+        <div style="color:#ef4444;font-weight:600;margin-top:8px;">🚀 Available for Freelance Projects</div>
+        <p class="hero-desc">
+          A Full Stack Web Developer with hands-on experience in React, Node.js, and DevOps.
+          I create scalable, end-to-end solutions with a focus on clean code and modern practices.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary">My Works</a>
+          <a href="#contact"  class="btn-outline">Get In Touch</a>
+          <a href="https://www.linkedin.com/in/sanjayshu1012/" target="_blank" class="btn-li">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn ↗
+          </a>
+          <a href="https://github.com/Sanjay10tech" target="_blank" class="btn-gh">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub ↗
+          </a>
+        </div>
+
+        <!-- Stat Cards -->
+        <div class="stats-grid">
+          <div class="stat-card fade-up vis">
+            <div class="stat-icon">⚡</div>
+            <div class="stat-num">2+</div>
+            <div class="stat-lbl">Years Experience</div>
+          </div>
+          <div class="stat-card fade-up vis">
+            <div class="stat-icon">🚀</div>
+            <div class="stat-num">20+</div>
+            <div class="stat-lbl">Projects Completed</div>
+          </div>
+          <div class="stat-card fade-up vis">
+            <div class="stat-icon">💡</div>
+            <div class="stat-num">30+</div>
+            <div class="stat-lbl">Technologies</div>
+          </div>
+          <div class="stat-card fade-up vis">
+            <div class="stat-icon">😊</div>
+            <div class="stat-num">10+</div>
+            <div class="stat-lbl">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="photo-wrap fade-up vis">
+        <div style="position:relative;">
+          <div class="otw-badge">
+            <span class="otw-dot"></span> Open to Work
+          </div>
+          <div class="photo-card">
+            <img id="hero-img" src="" alt="Sanjay Kumar Shukla"/>
+            <div class="loc-badge">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Indore - Bengaluru, India
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 2 — ABOUT
+     ════════════════════════════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:12px;"><span class="sec-badge">About Me</span></div>
+    <h2 class="sec-head">Who <span>I Am</span></h2>
+    <div style="height:40px;"></div>
+
+    <div class="about-grid fade-up">
+      <!-- Photo Card -->
+      <div class="about-card">
+        <div class="about-otw">✓ Open to Work</div>
+        <div class="about-avatar">
+          <img id="about-img" src="" alt="Sanjay Kumar Shukla"/>
+        </div>
+        <div class="about-name">Sanjay Kumar Shukla</div>
+        <div class="about-role-t">Full Stack Dev · DevOps &amp; AI Engineer</div>
+        <div class="about-loc"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Indore - Bengaluru, India</div>
+        <span class="about-tag">⚡ Full Stack Dev</span>
+      </div>
+
+      <!-- Right: Info -->
+      <div class="about-right">
+        <h3>Full Stack Developer · DevOps &amp; AI Engineer</h3>
+        <p>Passionate full-stack developer with expertise in building robust web applications
+           and cloud infrastructure. I love turning complex problems into simple, elegant solutions.</p>
+        <p>I thrive at the intersection of development and operations, bringing a holistic perspective
+           to building and deploying applications. Whether it's crafting pixel-perfect UIs or
+           optimizing Kubernetes clusters, I approach every challenge with curiosity and dedication.</p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-lbl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>LOCATION</div>
+            <div class="info-val">Indore - Bengaluru, India</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>EXPERIENCE</div>
+            <div class="info-val">2+ Years</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>EMAIL</div>
+            <div class="info-val">Available</div>
+          </div>
+          <div class="info-card">
+            <div class="info-lbl"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>STATUS</div>
+            <div class="info-val">Available</div>
+          </div>
+        </div>
+
+        <div class="social-btns">
+          <a href="https://github.com/Sanjay10tech" target="_blank" class="btn-gh">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/sanjayshu1012/" target="_blank" class="btn-li">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg> LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 3 — EXPERIENCE
+     ════════════════════════════════════════════════════════ -->
+<section id="experience">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:12px;"><span class="sec-badge">Work Experience</span></div>
+    <h2 class="sec-head">My <span>Journey</span></h2>
+    <p class="sec-sub">Building expertise through real-world experience in development and DevOps</p>
+
+    <div class="timeline">
+
+      <!-- Job 1: iTuring.ai -->
+      <div class="tl-item fade-up">
+        <div class="tl-dot dot-c">IT</div>
+        <div class="exp-card">
+          <div class="exp-hd">
+            <div class="exp-title">DevOps Engineer</div>
+            <div class="exp-date">Sep 2025 – Dec 2025</div>
+          </div>
+          <div class="exp-co-row">
+            <div><a href="#" class="exp-co">iTuring.ai</a><span class="exp-loc-t"> • Bengaluru, India</span></div>
+            <span class="badge-f">Full-time</span>
+          </div>
+          <div class="exp-desc">
+            Assisted in cloud infrastructure setup, CI/CD pipeline support, automation,
+            containerization, and monitoring under supervision. Contributed to documentation,
+            team collaboration, and basic troubleshooting of deployment issues in a production environment.
+          </div>
+          <div class="resp-t">KEY RESPONSIBILITIES</div>
+          <ul class="resp-list">
+            <li>Assisted in cloud infrastructure setup and CI/CD pipeline support</li>
+            <li>Worked on automation, containerization, and deployment monitoring</li>
+            <li>Contributed to documentation and team collaboration workflows</li>
+            <li>Troubleshot deployment issues in a production environment</li>
+            <li>Gained hands-on experience with ArgoCD, Prometheus, and Grafana</li>
+          </ul>
+          <div class="resp-t">TECHNOLOGIES &amp; SKILLS</div>
+          <div class="tech-tags">
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Jenkins</span>
+            <span class="tech-tag">CI/CD</span>
+            <span class="tech-tag">ArgoCD</span>
+            <span class="tech-tag">Prometheus</span>
+            <span class="tech-tag">Grafana</span>
+            <span class="tech-tag">Linux</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 2: Matex Technology -->
+      <div class="tl-item fade-up">
+        <div class="tl-dot dot-p">MT</div>
+        <div class="exp-card">
+          <div class="exp-hd">
+            <div class="exp-title">Software Developer</div>
+            <div class="exp-date">Jan 2022 – Feb 2023</div>
+          </div>
+          <div class="exp-co-row">
+            <div><a href="#" class="exp-co">Matex Technology</a><span class="exp-loc-t"> • Indore, India</span></div>
+            <span class="badge-f">Full-time</span>
+          </div>
+          <div class="exp-desc">
+            Built a CRM for EduCtrl, boosting efficiency by 40% and improving customer engagement
+            through streamlined workflows. Created an advertising site and B2B platform, increasing
+            business visibility and driving revenue growth.
+          </div>
+          <div class="resp-t">KEY RESPONSIBILITIES</div>
+          <ul class="resp-list">
+            <li>Built a CRM for EduCtrl boosting efficiency by 40%</li>
+            <li>Created advertising site and B2B platform for revenue growth</li>
+            <li>Developed web apps using HTML, CSS, JS, Bootstrap, PHP, MySQL, Laravel</li>
+            <li>Improved customer engagement through streamlined workflows</li>
+          </ul>
+          <div class="resp-t">TECHNOLOGIES &amp; SKILLS</div>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Laravel</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Job 3: IIT Patna -->
+      <div class="tl-item fade-up">
+        <div class="tl-dot dot-o">IIT</div>
+        <div class="exp-card">
+          <div class="exp-hd">
+            <div class="exp-title">Campus Ambassador</div>
+            <div class="exp-date">2022</div>
+          </div>
+          <div class="exp-co-row">
+            <div><a href="#" class="exp-co">IIT Patna</a><span class="exp-loc-t"> • Patna, India</span></div>
+            <span class="badge-p">Part-time</span>
+          </div>
+          <div class="exp-desc">
+            Served as a Campus Ambassador for IIT Patna, representing the institution and promoting
+            its events, workshops, and technical initiatives among students and the developer community.
+          </div>
+          <div class="resp-t">KEY RESPONSIBILITIES</div>
+          <ul class="resp-list">
+            <li>Promoted IIT Patna events, hackathons, and technical workshops</li>
+            <li>Coordinated with student communities to drive participation</li>
+            <li>Acted as a liaison between IIT Patna and local student organizations</li>
+            <li>Organized technical sessions and awareness drives on campus</li>
+          </ul>
+          <div class="resp-t">TECHNOLOGIES &amp; SKILLS</div>
+          <div class="tech-tags">
+            <span class="tech-tag">Community Building</span>
+            <span class="tech-tag">Event Management</span>
+            <span class="tech-tag">Communication</span>
+            <span class="tech-tag">Leadership</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 4 — EDUCATION
+     ════════════════════════════════════════════════════════ -->
+<section id="education">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:12px;"><span class="sec-badge">Education</span></div>
+    <h2 class="sec-head">Academic <span>Background</span></h2>
+    <p class="sec-sub">A strong foundation built through years of dedicated learning</p>
+
+    <div class="edu-grid">
+      <div class="edu-card edu-blue fade-up">
+        <div class="edu-yr">2023 – 2025</div>
+        <div class="edu-deg">Master in Computer Application (MCA)</div>
+        <div class="edu-col">R.V. COLLEGE OF ENGINEERING (RVCE)</div>
+        <div class="edu-city">Bangalore</div>
+        <div class="edu-grade"><span class="grade-dot"></span>&nbsp;Grade: 7.49 CGPA</div>
+      </div>
+      <div class="edu-card edu-pink fade-up">
+        <div class="edu-yr">2020 – 2023</div>
+        <div class="edu-deg">Bachelor in Computer Application (BCA)</div>
+        <div class="edu-col">GOVT. HOLKAR SCIENCE COLLEGE A.B. ROAD</div>
+        <div class="edu-city">Indore</div>
+        <div class="edu-grade"><span class="grade-dot"></span>&nbsp;Grade: 8.2 CGPA</div>
+      </div>
+      <div class="edu-card edu-orange fade-up">
+        <div class="edu-yr">2019 – 2020</div>
+        <div class="edu-deg">P.C.M (12th)</div>
+        <div class="edu-col">SRI GARIMA VIDYA MANDIR H.S. SCHOOL</div>
+        <div class="edu-city">Indore</div>
+        <div class="edu-grade"><span class="grade-dot"></span>&nbsp;Grade: First class distinction</div>
+      </div>
+      <div class="edu-card edu-green fade-up">
+        <div class="edu-yr">2018 – 2019</div>
+        <div class="edu-deg">10th</div>
+        <div class="edu-col">SRI GARIMA VIDYA MANDIR H.S. SCHOOL</div>
+        <div class="edu-city">Indore</div>
+        <div class="edu-grade"><span class="grade-dot"></span>&nbsp;Grade: First class distinction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 5 — SKILLS
+     ════════════════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:12px;"><span class="sec-badge">Skills</span></div>
+    <h2 class="sec-head">My <span>Expertise</span></h2>
+    <p class="sec-sub">A comprehensive skill set spanning the full development and deployment lifecycle</p>
+
+    <div class="skills-grid">
+
+      <!-- Frontend -->
+      <div class="sk-card sk-front fade-up">
+        <div class="sk-hd"><div class="sk-icon si-front">🎨</div><div class="sk-title">Frontend</div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">React.js</span><span class="bar-pct">90%</span></div><div class="bar-bg"><div class="bar-fill bf-front" style="width:90%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Next.js</span><span class="bar-pct">85%</span></div><div class="bar-bg"><div class="bar-fill bf-front" style="width:85%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">TypeScript</span><span class="bar-pct">82%</span></div><div class="bar-bg"><div class="bar-fill bf-front" style="width:82%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Tailwind CSS</span><span class="bar-pct">90%</span></div><div class="bar-bg"><div class="bar-fill bf-front" style="width:90%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">JavaScript</span><span class="bar-pct">92%</span></div><div class="bar-bg"><div class="bar-fill bf-front" style="width:92%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">HTML5 &amp; CSS3</span><span class="bar-pct">95%</span></div><div class="bar-bg"><div class="bar-fill bf-front" style="width:95%"></div></div></div>
+      </div>
+
+      <!-- Backend -->
+      <div class="sk-card sk-back fade-up">
+        <div class="sk-hd"><div class="sk-icon si-back">⚙️</div><div class="sk-title">Backend</div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Node.js</span><span class="bar-pct">85%</span></div><div class="bar-bg"><div class="bar-fill bf-back" style="width:85%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Express.js</span><span class="bar-pct">82%</span></div><div class="bar-bg"><div class="bar-fill bf-back" style="width:82%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Python</span><span class="bar-pct">75%</span></div><div class="bar-bg"><div class="bar-fill bf-back" style="width:75%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">REST APIs</span><span class="bar-pct">88%</span></div><div class="bar-bg"><div class="bar-fill bf-back" style="width:88%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">GraphQL</span><span class="bar-pct">70%</span></div><div class="bar-bg"><div class="bar-fill bf-back" style="width:70%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">PostgreSQL</span><span class="bar-pct">80%</span></div><div class="bar-bg"><div class="bar-fill bf-back" style="width:80%"></div></div></div>
+      </div>
+
+      <!-- DevOps -->
+      <div class="sk-card sk-devops fade-up">
+        <div class="sk-hd"><div class="sk-icon si-devops">☁️</div><div class="sk-title">DevOps &amp; Cloud</div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Docker</span><span class="bar-pct">85%</span></div><div class="bar-bg"><div class="bar-fill bf-devops" style="width:85%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Kubernetes</span><span class="bar-pct">75%</span></div><div class="bar-bg"><div class="bar-fill bf-devops" style="width:75%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">AWS</span><span class="bar-pct">80%</span></div><div class="bar-bg"><div class="bar-fill bf-devops" style="width:80%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">CI/CD</span><span class="bar-pct">82%</span></div><div class="bar-bg"><div class="bar-fill bf-devops" style="width:82%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Terraform</span><span class="bar-pct">70%</span></div><div class="bar-bg"><div class="bar-fill bf-devops" style="width:70%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Linux</span><span class="bar-pct">85%</span></div><div class="bar-bg"><div class="bar-fill bf-devops" style="width:85%"></div></div></div>
+      </div>
+
+      <!-- AI/ML -->
+      <div class="sk-card sk-ai fade-up">
+        <div class="sk-hd"><div class="sk-icon si-ai">🤖</div><div class="sk-title">AI / ML &amp; Data Science</div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Machine Learning</span><span class="bar-pct">78%</span></div><div class="bar-bg"><div class="bar-fill bf-ai" style="width:78%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Data Science</span><span class="bar-pct">75%</span></div><div class="bar-bg"><div class="bar-fill bf-ai" style="width:75%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">LLM / GenAI</span><span class="bar-pct">72%</span></div><div class="bar-bg"><div class="bar-fill bf-ai" style="width:72%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">Python (AI)</span><span class="bar-pct">82%</span></div><div class="bar-bg"><div class="bar-fill bf-ai" style="width:82%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">System Design</span><span class="bar-pct">74%</span></div><div class="bar-bg"><div class="bar-fill bf-ai" style="width:74%"></div></div></div>
+        <div class="bar-w"><div class="bar-top"><span class="bar-nm">React Native</span><span class="bar-pct">76%</span></div><div class="bar-bg"><div class="bar-fill bf-ai" style="width:76%"></div></div></div>
+      </div>
+
+      <!-- Tools & Platforms -->
+      <div class="tools-card fade-up">
+        <div class="tools-title">🛠️ Tools &amp; Platforms</div>
+        <div class="tools-wrap">
+          <span class="tool-tag">Git &amp; GitHub</span><span class="tool-tag">VS Code</span>
+          <span class="tool-tag">Postman</span><span class="tool-tag">Figma</span>
+          <span class="tool-tag">Jira</span><span class="tool-tag">Slack</span>
+          <span class="tool-tag">MongoDB Compass</span><span class="tool-tag">DBeaver</span>
+          <span class="tool-tag">Vercel</span><span class="tool-tag">Netlify</span>
+          <span class="tool-tag">Nginx</span><span class="tool-tag">Redis</span>
+          <span class="tool-tag">ElasticSearch</span><span class="tool-tag">Apache Kafka</span>
+          <span class="tool-tag">Jenkins</span><span class="tool-tag">Ansible</span>
+          <span class="tool-tag">Helm</span><span class="tool-tag">ArgoCD</span>
+          <span class="tool-tag">Datadog</span><span class="tool-tag">Notion</span>
+          <span class="tool-tag">IntelliJ IDEA</span><span class="tool-tag">Android Studio</span>
+          <span class="tool-tag">Jupyter Notebook</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 6 — PROJECTS
+     ════════════════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <h2 class="sec-head">What I've <span>Built</span></h2>
+    <p class="sec-sub">A collection of projects showcasing my skills across the full stack</p>
+
+    <div class="proj-grid">
+
+      <!-- Project 1: Smart AI Store Surveillance -->
+      <div class="proj-card fade-up">
+        <div class="proj-thumb pt-h">
+          <img src="ai system image.jpg" alt="Smart AI Store Surveillance" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+          <span class="proj-badge">Featured</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Smart AI Store Surveillance</div>
+          <div class="proj-desc">AI-powered retail analytics platform that converts CCTV footage and POS data into footfall tracking, heatmaps, conversion funnels, and operational insights using YOLOv11 &amp; ByteTrack.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">YOLOv11</span>
+            <span class="proj-tag">FastAPI</span>
+            <span class="proj-tag">PostgreSQL</span>
+            <span class="proj-more">+3</span>
+          </div>
+          <div class="proj-btns">
+            <a href="https://github.com/Sanjay10tech/PurplleHackathon-Smart-AI-Store-Surveillance" target="_blank" class="pj-code">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Code
+            </a>
+            <a href="https://github.com/Sanjay10tech/PurplleHackathon-Smart-AI-Store-Surveillance" target="_blank" class="pj-view pv-red">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Microservices SMS -->
+      <div class="proj-card fade-up">
+        <div class="proj-thumb pt-m">
+          <img src="devops imageb.jpg" alt="Microservices Student Management System" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+          <span class="proj-badge">Featured</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Microservices – Student Management System</div>
+          <div class="proj-desc">A production-grade microservice for managing student records, exposing both REST and SOAP APIs, backed by MySQL, containerised with Docker, and deployable on AWS EC2.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Java</span>
+            <span class="proj-tag">Spring Boot</span>
+            <span class="proj-tag">Docker</span>
+            <span class="proj-tag">AWS EC2</span>
+            <span class="proj-more">+3</span>
+          </div>
+          <div class="proj-btns">
+            <a href="https://github.com/Sanjay10tech/-Microservices-SMS" target="_blank" class="pj-code">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Code
+            </a>
+            <a href="https://github.com/Sanjay10tech/-Microservices-SMS" target="_blank" class="pj-view pv-ora">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Display Quality Validator -->
+      <div class="proj-card fade-up">
+        <div class="proj-thumb pt-ml">
+          <img src="display image.jpg" alt="Display Quality Validator" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+          <span class="proj-badge">Featured</span>
+        </div>
+        <div class="proj-body">
+          <div class="proj-title">Display Quality Validator</div>
+          <div class="proj-desc">Automated display defect detection tool using Python and OpenCV that detects dead pixels, color anomalies, and brightness variation with per-image PASS/FAIL reports and quality scores.</div>
+          <div class="proj-tags">
+            <span class="proj-tag">Python</span>
+            <span class="proj-tag">OpenCV</span>
+            <span class="proj-tag">NumPy</span>
+            <span class="proj-tag">Pytest</span>
+            <span class="proj-more">+1</span>
+          </div>
+          <div class="proj-btns">
+            <a href="https://github.com/Sanjay10tech/Display-Quality-Validator" target="_blank" class="pj-code">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> Code
+            </a>
+            <a href="https://github.com/Sanjay10tech/Display-Quality-Validator" target="_blank" class="pj-view pv-pur">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg> View
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 7 — BLOG
+     ════════════════════════════════════════════════════════ -->
+<section id="blog">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:12px;"><span class="sec-badge">Blog</span></div>
+    <h2 class="sec-head">Latest <span>Articles</span></h2>
+    <p class="blog-sub-txt">
+      I professionally write technical blogs on Data Science and DSA.
+      <a href="https://medium.com/@sanjayshukla9589" target="_blank">I'm also a writer at Medium</a>
+    </p>
+
+    <div class="blog-grid">
+      <div class="blog-card fade-up">
+        <div class="blog-thumb bt-ai">
+          <img src="t 1 image.jpg" alt="AI & Robotics" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+          <span class="blog-cat">AI &amp; Robotics</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-t1">The Future of Autonomous Systems Every B.Tech Student Should Understand</div>
+          <div class="blog-ft">
+            <span class="blog-time">5 min read</span>
+            <a href="https://medium.com/@sanjayshukla9589" target="_blank" class="blog-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card fade-up">
+        <div class="blog-thumb bt-q">
+          <img src="t 2 image.jpg" alt="Quantum Tech" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+          <span class="blog-cat">Quantum Tech</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-t2">Quantum Computing Meets Reality: 2025 Every Engi Student Needs to Know</div>
+          <div class="blog-ft">
+            <span class="blog-time">6 min read</span>
+            <a href="https://medium.com/@sanjayshukla9589" target="_blank" class="blog-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+      <div class="blog-card fade-up">
+        <div class="blog-thumb bt-g">
+          <img src="t 3 image.jpg" alt="Sustainability" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"/>
+          <span class="blog-cat">Sustainability</span>
+        </div>
+        <div class="blog-body">
+          <div class="blog-t3">How Green Computing is Creating New Career Paths for Engineers</div>
+          <div class="blog-ft">
+            <span class="blog-time">4 min read</span>
+            <a href="https://medium.com/@sanjayshukla9589" target="_blank" class="blog-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-cta">
+      <a href="https://medium.com/@sanjayshukla9589" target="_blank">FOLLOW MY MEDIUM FOR MORE!</a>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     SECTION 8 — CONTACT
+     ════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:12px;"><span class="sec-badge">Contact</span></div>
+    <h2 class="sec-head">Get In <span>Touch</span></h2>
+    <p class="sec-sub">Have a project in mind? Let's talk about it. I'm always open to new opportunities.</p>
+
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div>
+        <div class="c-work">
+          <h3>Let's work together</h3>
+          <p>I'm currently available for freelance work and full-time positions.
+             If you have a project that needs creative problem solving and technical expertise, reach out!</p>
+        </div>
+        <a href="mailto:sanjayshukla9589@gmail.com" class="c-link">
+          <div class="ci-ic ci-ma-bg"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></div>
+          <div><div class="ci-lbl">EMAIL</div><div class="ci-val">sanjayshukla9589@gmail.com</div></div>
+        </a>
+        <a href="https://github.com/Sanjay10tech" target="_blank" class="c-link">
+          <div class="ci-ic ci-gh-bg"><svg width="17" height="17" viewBox="0 0 24 24" fill="#e2e8f0"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></div>
+          <div><div class="ci-lbl">GITHUB</div><div class="ci-val">github.com/Sanjay10tech</div></div>
+        </a>
+        <a href="https://www.linkedin.com/in/sanjayshu1012/" target="_blank" class="c-link">
+          <div class="ci-ic ci-li-bg"><svg width="17" height="17" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+          <div><div class="ci-lbl">LINKEDIN</div><div class="ci-val">linkedin.com/in/sanjayshu1012</div></div>
+        </a>
+        <div class="c-link" style="cursor:default;">
+          <div class="ci-ic ci-lo-bg"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="ci-lbl">LOCATION</div><div class="ci-val">Indore - Bengaluru, India</div></div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="c-form">
+        <div class="form-g">
+          <label class="form-lbl">Your Name</label>
+          <input id="fname" class="form-inp" placeholder="John Doe"/>
+        </div>
+        <div class="form-g">
+          <label class="form-lbl">Email Address</label>
+          <input id="femail" type="email" class="form-inp" placeholder="john@example.com"/>
+        </div>
+        <div class="form-g">
+          <label class="form-lbl">Message</label>
+          <textarea id="fmsg" class="form-ta" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="form-btn" id="fsend" onclick="sendForm()">Send Message →</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+     ════════════════════════════════════════════════════════ -->
+<footer>
+  <div class="ft-brand">
+    <div class="logo-ic">SS</div>
+    <div>
+      <div class="ft-nm">Sanjay Kumar Shukla</div>
+      <div class="ft-rl">Software Developer</div>
+    </div>
+  </div>
+  <div class="ft-socials">
+    <a href="https://github.com/Sanjay10tech" target="_blank" class="ft-ic ft-gh" title="GitHub"><svg width="24" height="24" viewBox="0 0 24 24" fill="#e2e8f0"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+    <a href="https://www.linkedin.com/in/sanjayshu1012/" target="_blank" class="ft-ic ft-li" title="LinkedIn"><svg width="24" height="24" viewBox="0 0 24 24" fill="#0a66c2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+  </div>
+  <div class="ft-copy">© 2024 Sanjay Kumar Shukla. All rights reserved.</div>
+</footer>
+
+<!-- ── Scripts ─────────────────────────────────────────────── -->
+<script>
+  // Inject images from assets/images.js after DOM loads
+  window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('hero-img').src  = HERO_IMG;
+    document.getElementById('about-img').src = ABOUT_IMG;
+  });
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
