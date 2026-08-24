@@ -23,7 +23,7 @@ document.addEventListener('mousemove', e => {
 })();
 
 /* Cursor interactions */
-document.querySelectorAll('a, button, .proj-card, .blog-card, .stat-card, .edu-card, .sk-card, .tool-tag').forEach(el => {
+document.querySelectorAll('a, button, .proj-card, .blog-card, .stat-card, .edu-card, .sk-panel, .sk-tool-tag').forEach(el => {
   el.addEventListener('mouseenter', () => {
     cur.style.width = '56px';
     cur.style.height = '56px';
@@ -163,13 +163,13 @@ const barObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const bars = entry.target.querySelectorAll('.bar-fill');
+        const bars = entry.target.querySelectorAll('.sk-item-fill');
         bars.forEach((bar, i) => {
           const width = bar.style.width;
           bar.style.width = '0%';
           setTimeout(() => {
             bar.style.width = width;
-          }, i * 100 + 200);
+          }, i * 80 + 200);
         });
         barObserver.unobserve(entry.target);
       }
@@ -177,7 +177,7 @@ const barObserver = new IntersectionObserver(
   },
   { threshold: 0.2 }
 );
-document.querySelectorAll('.sk-card').forEach(el => barObserver.observe(el));
+document.querySelectorAll('.sk-panel').forEach(el => barObserver.observe(el));
 
 /* ── 8. TIMELINE REVEAL ───────────────────────────────────── */
 const tlObserver = new IntersectionObserver(
