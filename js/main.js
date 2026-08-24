@@ -2,6 +2,31 @@
    Sanjay Portfolio — Premium Animations & Interactions
    ═══════════════════════════════════════════════════════════ */
 
+/* ── 0. WELCOME INTRO ─────────────────────────────────────── */
+(function() {
+  document.body.classList.add('intro-active');
+  const overlay = document.getElementById('intro-overlay');
+  if (!overlay) return;
+  const lines = overlay.querySelectorAll('.intro-line');
+  
+  /* Stagger reveal lines */
+  lines.forEach((line, i) => {
+    setTimeout(() => line.classList.add('intro-vis'), 300 + i * 400);
+  });
+  
+  /* Fade out after 3 seconds */
+  setTimeout(() => {
+    overlay.classList.add('intro-hidden');
+    document.body.classList.remove('intro-active');
+    document.documentElement.classList.remove('intro-active');
+  }, 3000);
+  
+  /* Remove from DOM after transition */
+  setTimeout(() => {
+    overlay.remove();
+  }, 3900);
+})();
+
 /* ── 1. SMOOTH CUSTOM CURSOR ──────────────────────────────── */
 const cur = document.getElementById('cursor');
 const dot = document.getElementById('cdot');

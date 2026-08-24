@@ -16,8 +16,21 @@
 
   <!-- Embedded Assets (photos + PDF) -->
   <script src="assets/images.js"></script>
+
+  <!-- Intro: prevent scroll flash -->
+  <style>body.intro-active{overflow:hidden;}</style>
+  <script>document.documentElement.classList.add('intro-active');document.addEventListener('DOMContentLoaded',function(){document.body.classList.add('intro-active');});</script>
 </head>
 <body>
+
+<!-- ── WELCOME INTRO ──────────────────────────────────────── -->
+<div id="intro-overlay">
+  <div class="intro-content">
+    <div class="intro-line intro-line-1">Welcome to</div>
+    <div class="intro-line intro-line-2">Sanjay Kumar Shukla's Portfolio</div>
+    <div class="intro-line intro-line-3">Software Engineer • Full-Stack Developer • DevOps</div>
+  </div>
+</div>
 
 <!-- ── CURSOR ─────────────────────────────────────────────── -->
 <div id="cursor"></div>
@@ -375,8 +388,8 @@
 
     <div class="skills-v2">
 
-      <!-- Row 1: Frontend + Backend -->
-      <div class="sk-row sk-row-2">
+      <!-- All 4 skill categories in one row -->
+      <div class="sk-row sk-row-4">
 
         <!-- Frontend -->
         <div class="sk-panel fade-up" data-accent="front">
@@ -419,11 +432,6 @@
             <div class="sk-item"><div class="sk-item-info"><span class="sk-item-name">PostgreSQL</span><span class="sk-item-pct">80%</span></div><div class="sk-item-bar"><div class="sk-item-fill skf-back" style="width:80%"></div></div></div>
           </div>
         </div>
-
-      </div>
-
-      <!-- Row 2: DevOps + AI/ML -->
-      <div class="sk-row sk-row-2">
 
         <!-- DevOps -->
         <div class="sk-panel fade-up" data-accent="devops">
